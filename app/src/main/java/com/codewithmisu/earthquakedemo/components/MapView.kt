@@ -15,6 +15,7 @@ import com.google.maps.android.compose.rememberCameraPositionState
 fun QuakeMapView(
     lat: Double,
     lng: Double,
+    depth: Double,
     place: String,
 ) {
     val location = LatLng(lat, lng)
@@ -30,7 +31,7 @@ fun QuakeMapView(
         Marker(
             state = MarkerState(position = location),
             title = "EarthQuake",
-            snippet = place
+            snippet = "Location: $place with Depth: $depth"
         )
     }
 }

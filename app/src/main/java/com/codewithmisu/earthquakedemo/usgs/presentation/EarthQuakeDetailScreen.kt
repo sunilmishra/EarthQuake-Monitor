@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -101,12 +102,19 @@ fun EarthQuakeDetailScreen(
                              * <meta-data
                              *     android:name="com.google.android.geo.API_KEY"
                              *     android:value="YOUR_API_KEY"/>
+                             *
                              */
 //                            QuakeMapView(
 //                                lat = it.coordinates!![0],
 //                                lng = it.coordinates[1],
+//                                depth = it.coordinates[2],
 //                                place = feature.properties!!.place
 //                            )
+                            Text(
+                                "Map API key required to display mapview - Read Comment in the code",
+                                fontWeight = FontWeight.W600,
+                                fontStyle = FontStyle.Italic
+                            )
                         }
                     }
                 }

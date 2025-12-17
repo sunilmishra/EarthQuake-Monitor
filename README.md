@@ -72,3 +72,10 @@ The "detail" screen must display the following textual information about the ear
 - **Asynchronous:** Kotlin Coroutines & Flow
 - **Local Database:** Room
 - Google Map
+- 
+## Development Approach
+
+- MVVM Architecture
+- Feature based (layered) modularity
+- Separation of concern using DI, Navigation(Route)
+
